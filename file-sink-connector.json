@@ -1,0 +1,9 @@
+{
+    "name": "cdc-file-sink",
+    "config": {
+        "connector.class": "org.apache.kafka.connect.file.FileStreamSinkConnector",
+        "tasks.max": "1",
+        "topics": "<server name>.<table name> e.g. todos-server.public.todos",
+        "file": "<enter full path to file e.g. /Users/foo/work/pg-cdc.txt>"
+    }
+}

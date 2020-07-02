@@ -1,0 +1,14 @@
+{
+    "name": "todo-test-connector",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "database.hostname": "<POSTGRES_INSTANCE_NAME>.postgres.database.azure.com",
+        "database.port": "5432",
+        "database.user": "<DB_USER_NAME>",
+        "database.password": "<PASSWORD>",
+        "database.dbname": "<DB_NAME e.g. postgres>",
+        "database.server.name": "<LOGICAL_NAMESPACE e.g. todo-server>",
+        "plugin.name": "wal2json",
+        "table.whitelist": "<TABLE_NAMES e.g. public.todos>"
+    }
+}
